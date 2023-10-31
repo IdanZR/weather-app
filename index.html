@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="main.js" defer="true"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.0/axios.min.js"></script>
+
+    <title>Weather App</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="choose-con">
+        <div class="header">
+          <select id="country-select">
+            <option disabled selected value="">Country</option>
+          </select>
+        </div>
+        <div class="header">
+          <select id="cities-select">
+            <option disabled selected value="">City</option>
+          </select>
+        </div>
+      </div>
+    
+      <div class="sec1">
+        <h2>Current Weather</h2>
+        <div class="profile">
+          <div class="weather-info">
+            <img id="weather-icon" src="" alt="Weather Icon" />
+            <div class="together-details">
+              <div class="location" id="location">Location</div>
+              <h1 id="temperature">24</h1>
+              <h3 id="weather-description">Heavy Rain</h3>
+              <h3 id="current-time"></h3>
+            </div>
+          </div>
+          <div class="windstatus">
+            <h1>Wind Status</h1>
+            <span><img class="t1" src="./assets/wind.png" ><h2  id="wind"></h2></span>
+            <div class="location" id="location">km/h</div>
+          </div>
+          <div class="windstatus">
+            <h1>Humidity</h1>
+            <span><img class="t1" src="./assets/waterdrop.png" ><h2  id="water"></h2></span>
+          </div>
+      </div>
+    </div>
+    <div class="weather-container">
+      <h2>Weather Forecast</h2>
+      <div class="weather-details" id="weather-details"></div>
+    </div>
+  </body>
+</html>
